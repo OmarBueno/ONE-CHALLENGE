@@ -7,27 +7,20 @@
         <title>Challenge Encriptador</title>
         <link rel="stylesheet" href="style.css" />
     </head>
-    <header>
-        <h1>Challenge Encriptador de mensaje</h1>
-    </header>
     <body>
-        <textarea
-            id="inputText"
-            cols="30"
-            rows="10"
-            placeholder="Ingrese su texto aqui"
-        ></textarea>
+        <header>
+            <h1>Challenge Encriptador de mensaje</h1>
+        </header>
+        <textarea id="inputText" placeholder="Ingrese su texto aquí"></textarea>
         <div>
-            <button id="buttonEncriptar" onclick="cifrar;">Encriptar</button>
-            <button id="buttonDesencriptar" onclick="descifrar;">
-                Desencriptar
-            </button>
+            <button id="buttonEncriptar" onclick="cifrar()">Encriptar</button>
+            <button id="buttonDesencriptar" onclick="descifrar()">Desencriptar</button>
         </div>
         <div>
-            <textarea id="outputText" cols="30" rows="10" disabled></textarea>
+            <textarea id="outputText" disabled></textarea>
         </div>
+        <footer>
+            <script src="main.js"></script>
+        </footer>
     </body>
-    <footer>
-        <script src="main.js"></script>
-    </footer>
 </html>
