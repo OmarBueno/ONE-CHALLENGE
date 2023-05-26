@@ -9,17 +9,35 @@
     </head>
     <body>
         <header>
-            <h1>Challenge Encriptador de mensaje</h1>
+                <img src="assets/logo2.png" alt="Logo" />
+                <h1>Challenge Encriptador</h1>
         </header>
-        <textarea id="inputText" placeholder="Ingrese su texto aquí"></textarea>
-        <div>
-            <button id="buttonEncriptar" onclick="cifrar()">Encriptar</button>
-            <button id="buttonDesencriptar" onclick="descifrar()">Desencriptar</button>
-        </div>
-        <div>
-            <textarea id="outputText" disabled></textarea>
-        </div>
+        <section>
+            <div id="FirstMain">
+                <textarea
+                    id="inputText"
+                    placeholder="Ingrese su texto aquí 
+Solo se aceptan letras"
+                ></textarea>
+                <div>
+                    <button id="buttonEncriptar" onclick="cifrar()">
+                        Encriptar
+                    </button>
+                    <button id="buttonDesencriptar" onclick="descifrar()">
+                        Desencriptar
+                    </button>
+                </div>
+            </div>
+
+            <div id="SecondMain">
+                <textarea id="outputText" disabled></textarea>
+                <button id="buttonCopy" onclick="copy()">Copiar</button>
+            </div>
+        </section>
         <footer>
+            <p>Creado por Omar Bueno</p>
+                <a href="https://github.com/OmarBueno"><img src="assets/github.png" alt="github"></a>
+                <a href="https://www.linkedin.com/in/omar-alejandro-bueno-zaldivar-b1129b187/"><img src="assets/link.png" alt="linkedin"></a>
             <script src="main.js"></script>
         </footer>
     </body>
